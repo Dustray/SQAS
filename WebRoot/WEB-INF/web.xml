@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <filter>
+  <filter-name>LoggerFilter</filter-name>
+  <filter-class>com.dustray.filter.LoggerFilter</filter-class>
+ </filter>
+ <filter>
+  <filter-name>LoginFilter</filter-name>
+  <filter-class>com.dustray.filter.LoginFilter</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>LoggerFilter</filter-name>
+  <url-pattern>*.jsp</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/indexBackground.jsp</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/addDiscipline.jsp</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/alterDiscipline.jsp</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/appealInquire.jsp</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/disposeAppeal.jsp</url-pattern>
+ </filter-mapping>
+ <filter-mapping>
+  <filter-name>LoginFilter</filter-name>
+  <url-pattern>/inquireManage.jsp</url-pattern>
+ </filter-mapping>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.LoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InquireServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.InquireServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AddDisServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.AddDisServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InquireAdvancedServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.InquireAdvancedServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InquireSimpleServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.InquireSimpleServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>getMyInfoServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.getMyInfoServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteDisServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.DeleteDisServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InquireManageServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.InquireManageServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>tests</servlet-name>
+  <servlet-class>com.dustray.servlet.tests</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LoggerServlet</servlet-name>
+  <servlet-class>com.dustray.servlet.LoggerServlet</servlet-class>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SubmitAppealServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.SubmitAppealServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AppealInquireServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.AppealInquireServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AlterDisServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.AlterDisServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateDisServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.UpdateDisServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisposeAppealServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.DisposeAppealServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MemberRegServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.MemberRegServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MemberRegPassServlet</servlet-name>
+    <servlet-class>com.dustray.servlet.MemberRegPassServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+ <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InquireServlet</servlet-name>
+  <url-pattern>/InquireServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddDisServlet</servlet-name>
+  <url-pattern>/AddDisServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InquireAdvancedServlet</servlet-name>
+  <url-pattern>/InquireAdvancedServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InquireSimpleServlet</servlet-name>
+  <url-pattern>/InquireSimpleServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>getMyInfoServlet</servlet-name>
+  <url-pattern>/getMyInfoServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteDisServlet</servlet-name>
+  <url-pattern>/DeleteDisServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InquireManageServlet</servlet-name>
+  <url-pattern>/InquireManageServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>tests</servlet-name>
+  <url-pattern>/tests</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>LoggerServlet</servlet-name>
+  <url-pattern>/LoggerServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubmitAppealServlet</servlet-name>
+    <url-pattern>/SubmitAppealServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AppealInquireServlet</servlet-name>
+    <url-pattern>/AppealInquireServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AlterDisServlet</servlet-name>
+    <url-pattern>/AlterDisServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateDisServlet</servlet-name>
+    <url-pattern>/UpdateDisServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisposeAppealServlet</servlet-name>
+    <url-pattern>/DisposeAppealServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberRegServlet</servlet-name>
+    <url-pattern>/MemberRegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberRegPassServlet</servlet-name>
+    <url-pattern>/MemberRegPassServlet</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>

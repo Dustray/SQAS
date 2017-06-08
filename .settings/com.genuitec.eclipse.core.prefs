@@ -1,0 +1,4 @@
+#Sat May 28 12:11:18 CST 2016
+eclipse.preferences.version=1
+validator.Checked=WebRoot/assets/js/jquery-1.8.2.min.js,WebRoot/model-assets/index.jsp.model/js/jquery-smartMenu-min.js,WebRoot/js/jquery-1.8.2.min.js,WebRoot/js/jquery-smartMenu-min.js
+validator.Unchecked=

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SQAS"
+  id="myeclipse.1463707259478"
+  context-root="/SUQAS"
+  j2ee-spec="5.0"
+  archive="SQAS.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
